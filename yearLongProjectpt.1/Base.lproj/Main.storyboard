@@ -104,6 +104,12 @@
                     <tabBarItem key="tabBarItem" title="Posts" image="square.and.arrow.up" catalog="system" selectedImage="square.and.arrow.up.fill" id="gUk-0x-XwE"/>
                     <connections>
                         <outlet property="profileImageView" destination="E24-nZ-FV8" id="HNS-GS-8RT"/>
+                        <outletCollection property="buttons" destination="P0H-69-VRn" collectionClass="NSMutableArray" id="dai-gn-1CS"/>
+                        <outletCollection property="buttons" destination="Wly-pw-faL" collectionClass="NSMutableArray" id="sXK-ho-eLt"/>
+                        <outletCollection property="buttons" destination="1qc-A4-uyX" collectionClass="NSMutableArray" id="afS-1C-8Lv"/>
+                        <outletCollection property="labels" destination="Lo5-St-vGB" collectionClass="NSMutableArray" id="JfY-XI-Sym"/>
+                        <outletCollection property="labels" destination="n6Z-2t-IzQ" collectionClass="NSMutableArray" id="8gj-1Q-Yzz"/>
+                        <outletCollection property="labels" destination="dYo-v0-Jbh" collectionClass="NSMutableArray" id="aew-BA-u6U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -201,6 +207,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4T-l3-Am3">
+                                <rect key="frame" x="326" y="75" width="50.333333333333314" height="34.333333333333343"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="gearshape.fill" catalog="system"/>
+                                <connections>
+                                    <segue destination="f86-Pk-MUY" kind="presentation" modalPresentationStyle="fullScreen" id="VTk-78-WGX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GRq-iU-bq4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -214,12 +229,16 @@
                             <constraint firstItem="nE0-wO-yTC" firstAttribute="top" secondItem="24L-WH-hiD" secondAttribute="bottom" constant="476" id="OBg-H7-4cf"/>
                             <constraint firstItem="xRW-8F-HAV" firstAttribute="leading" secondItem="GRq-iU-bq4" secondAttribute="leading" constant="146.66666666666669" id="PsM-fv-Fre"/>
                             <constraint firstItem="nE0-wO-yTC" firstAttribute="centerX" secondItem="t5A-e8-nYg" secondAttribute="centerX" id="Vtt-36-Qx7"/>
+                            <constraint firstItem="e4T-l3-Am3" firstAttribute="top" secondItem="GRq-iU-bq4" secondAttribute="top" constant="16" id="XBr-B8-38N"/>
                             <constraint firstItem="xGl-JO-JUN" firstAttribute="top" secondItem="24L-WH-hiD" secondAttribute="bottom" constant="8" id="ZHV-M8-n0I"/>
                             <constraint firstItem="xRW-8F-HAV" firstAttribute="centerX" secondItem="24L-WH-hiD" secondAttribute="centerX" id="ZTq-HR-Ng2"/>
+                            <constraint firstItem="GRq-iU-bq4" firstAttribute="trailing" secondItem="e4T-l3-Am3" secondAttribute="trailing" constant="16.670000000000002" id="e6e-rA-lD7"/>
+                            <constraint firstItem="qNv-gm-1Xn" firstAttribute="top" secondItem="e4T-l3-Am3" secondAttribute="bottom" constant="146.66999999999999" id="hnX-BI-UNg"/>
                             <constraint firstItem="24L-WH-hiD" firstAttribute="leading" secondItem="t5A-e8-nYg" secondAttribute="leadingMargin" id="int-Hd-jHB"/>
                             <constraint firstItem="xRW-8F-HAV" firstAttribute="top" secondItem="GRq-iU-bq4" secondAttribute="top" constant="30" id="txJ-uC-i2z"/>
                             <constraint firstItem="GRq-iU-bq4" firstAttribute="bottom" secondItem="nE0-wO-yTC" secondAttribute="bottom" constant="69.670000000000002" id="uVv-2Q-yr9"/>
                             <constraint firstItem="F0V-qR-hjb" firstAttribute="leading" secondItem="GRq-iU-bq4" secondAttribute="leading" constant="33" id="vip-sq-VtC"/>
+                            <constraint firstItem="e4T-l3-Am3" firstAttribute="leading" secondItem="xRW-8F-HAV" secondAttribute="trailing" constant="79.670000000000002" id="wCi-gL-ayt"/>
                             <constraint firstItem="24L-WH-hiD" firstAttribute="centerY" secondItem="xRW-8F-HAV" secondAttribute="centerY" id="wEK-MY-ZCz"/>
                             <constraint firstItem="xGl-JO-JUN" firstAttribute="centerX" secondItem="t5A-e8-nYg" secondAttribute="centerX" id="zLJ-mV-N4v"/>
                         </constraints>
@@ -227,11 +246,86 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" selectedImage="person.fill" id="1lf-mE-mMJ"/>
                     <connections>
                         <outlet property="profileImageView" destination="xRW-8F-HAV" id="HQA-AI-h6e"/>
+                        <outletCollection property="labels" destination="xGl-JO-JUN" collectionClass="NSMutableArray" id="Bdd-AW-Y6F"/>
+                        <outletCollection property="labels" destination="7q3-F1-Q1v" collectionClass="NSMutableArray" id="bck-MT-kT2"/>
+                        <outletCollection property="labels" destination="beW-Op-RKj" collectionClass="NSMutableArray" id="z2n-6U-V1b"/>
+                        <outletCollection property="labels" destination="F0V-qR-hjb" collectionClass="NSMutableArray" id="x6J-X0-vje"/>
+                        <outletCollection property="labels" destination="719-iA-aHQ" collectionClass="NSMutableArray" id="G21-sf-aMd"/>
+                        <outletCollection property="labels" destination="TIM-Mv-BiG" collectionClass="NSMutableArray" id="r7z-g9-D5J"/>
+                        <outletCollection property="labels" destination="Ztg-we-SeW" collectionClass="NSMutableArray" id="APJ-pe-Ddr"/>
+                        <outletCollection property="labels" destination="DAb-0g-6WX" collectionClass="NSMutableArray" id="1Y7-ci-cmK"/>
+                        <outletCollection property="labels" destination="9mJ-OR-bdv" collectionClass="NSMutableArray" id="6kW-QN-YEY"/>
+                        <outletCollection property="labels" destination="qXh-eg-t2S" collectionClass="NSMutableArray" id="aks-bE-Jjw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1v-2c-gj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1991.6030534351144" y="72.535211267605632"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="68I-DH-hfm">
+            <objects>
+                <viewController id="f86-Pk-MUY" customClass="SettingsViewController" customModule="yearLongProjectpt_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NRJ-JY-LG1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vov-7M-wnY">
+                                <rect key="frame" x="19.999999999999996" y="5" width="61.666666666666657" height="34.333333333333336"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <segue destination="zay-Rn-pWU" kind="unwind" unwindAction="unwindToProfileWithSegue:" id="oDM-lx-fZt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMJ-aa-nhw">
+                                <rect key="frame" x="152" y="65" width="89" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="138" translatesAutoresizingMaskIntoConstraints="NO" id="oZf-GG-Jf3">
+                                <rect key="frame" x="61.333333333333343" y="125" width="270.66666666666663" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIU-hA-Y7i">
+                                        <rect key="frame" x="0.0" y="0.0" width="83.666666666666671" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="H8n-9n-dOf">
+                                        <rect key="frame" x="221.66666666666666" y="0.0" width="50.999999999999972" height="31"/>
+                                        <connections>
+                                            <action selector="darkModeSwitched:" destination="f86-Pk-MUY" eventType="valueChanged" id="Knr-vd-GSS"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i1y-DI-sbe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vov-7M-wnY" firstAttribute="top" secondItem="NRJ-JY-LG1" secondAttribute="topMargin" constant="5" id="0kD-NA-HBe"/>
+                            <constraint firstItem="NMJ-aa-nhw" firstAttribute="top" secondItem="i1y-DI-sbe" secondAttribute="top" constant="65" id="39j-pU-WeZ"/>
+                            <constraint firstItem="oZf-GG-Jf3" firstAttribute="top" secondItem="NMJ-aa-nhw" secondAttribute="bottom" constant="30" id="8mZ-Wf-kyy"/>
+                            <constraint firstItem="NMJ-aa-nhw" firstAttribute="centerX" secondItem="NRJ-JY-LG1" secondAttribute="centerX" id="LOR-kw-GOW"/>
+                            <constraint firstItem="oZf-GG-Jf3" firstAttribute="centerX" secondItem="NRJ-JY-LG1" secondAttribute="centerX" id="bpu-WO-lXi"/>
+                            <constraint firstItem="vov-7M-wnY" firstAttribute="leading" secondItem="i1y-DI-sbe" secondAttribute="leading" constant="20" id="nlT-EU-fuu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dCP-nf-sjN"/>
+                    <connections>
+                        <outlet property="backButton" destination="vov-7M-wnY" id="1GJ-WE-alY"/>
+                        <outlet property="darkModeSwitch" destination="H8n-9n-dOf" id="XRj-Sp-5K9"/>
+                        <outletCollection property="labels" destination="nIU-hA-Y7i" collectionClass="NSMutableArray" id="qRs-rX-bbj"/>
+                        <outletCollection property="labels" destination="NMJ-aa-nhw" collectionClass="NSMutableArray" id="1Uk-fy-Zif"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wuN-Hm-9m3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zay-Rn-pWU" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2785" y="73"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pbG-36-4dW">
@@ -257,6 +351,7 @@
         <image name="BackGround" width="3024" height="2016"/>
         <image name="Post" width="2730" height="1821"/>
         <image name="Profile pic" width="1388" height="1933"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>

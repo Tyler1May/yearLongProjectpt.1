@@ -14,6 +14,7 @@
 		F79392652ABDE7D900520CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F79392642ABDE7D900520CF7 /* Assets.xcassets */; };
 		F79392682ABDE7D900520CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F79392662ABDE7D900520CF7 /* LaunchScreen.storyboard */; };
 		F79392702ABDF67C00520CF7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F793926F2ABDF67C00520CF7 /* ProfileViewController.swift */; };
+		F7C4EADC2AC31ED10054DA72 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C4EADB2AC31ED10054DA72 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F79392672ABDE7D900520CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F79392692ABDE7D900520CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F793926F2ABDF67C00520CF7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F7C4EADB2AC31ED10054DA72 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F793925F2ABDE7D800520CF7 /* ViewController.swift */,
 				F793926F2ABDF67C00520CF7 /* ProfileViewController.swift */,
 				F79392612ABDE7D800520CF7 /* Main.storyboard */,
+				F7C4EADB2AC31ED10054DA72 /* SettingsViewController.swift */,
 				F79392642ABDE7D900520CF7 /* Assets.xcassets */,
 				F79392662ABDE7D900520CF7 /* LaunchScreen.storyboard */,
 				F79392692ABDE7D900520CF7 /* Info.plist */,
@@ -144,6 +147,7 @@
 				F79392602ABDE7D800520CF7 /* ViewController.swift in Sources */,
 				F793925C2ABDE7D800520CF7 /* AppDelegate.swift in Sources */,
 				F79392702ABDF67C00520CF7 /* ProfileViewController.swift in Sources */,
+				F7C4EADC2AC31ED10054DA72 /* SettingsViewController.swift in Sources */,
 				F793925E2ABDE7D800520CF7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
