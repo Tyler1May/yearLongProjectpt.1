@@ -22,6 +22,9 @@ class ProfileViewController: UIViewController {
         if let svc = segue.destination as? SettingsViewController {
             svc.darkMode = darkMode
         }
+        if let vc = segue.destination as? UserPostTableViewController {
+            vc.darkMode = darkMode
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
